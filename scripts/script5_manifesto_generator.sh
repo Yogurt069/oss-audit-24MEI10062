@@ -8,6 +8,7 @@ read -p "1. Name an open source tool you use often: " tool
 read -p "2. Describe 'freedom' in one word: " freedom
 read -p "3. What would you build and share freely? " build
 
+# make sure the user didn't just hit enter without typing anything
 if [ -z "$tool" ] || [ -z "$freedom" ] || [ -z "$build" ]; then
     echo "Please answer all the prompts!"
     exit 1
@@ -17,6 +18,7 @@ user=$(whoami)
 date_str=$(date '+%d %b %Y')
 fname="manifesto_${user}.txt"
 
+# create a new file (or overwrite if it exists) and start dumping the manifesto text into it
 echo "Open Source Manifesto" > "$fname"
 echo "Author: $user" >> "$fname"
 echo "Date: $date_str" >> "$fname"

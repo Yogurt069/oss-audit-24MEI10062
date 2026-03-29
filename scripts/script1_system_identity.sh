@@ -13,6 +13,7 @@ echo "Software: $SOFTWARE"
 echo ""
 
 echo "[ System Info ]"
+# fetch the OS name from /etc/os-release, strip quotes, or fallback to 'Unknown Linux'
 echo "Distro: $(cat /etc/os-release 2>/dev/null | grep PRETTY_NAME | cut -d= -f2 | tr -d '"' || echo "Unknown Linux")"
 echo "Kernel: $(uname -r)"
 echo "User: $(whoami)"

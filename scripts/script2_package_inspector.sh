@@ -5,6 +5,7 @@ pkg="vlc"
 
 echo "Checking for $pkg..."
 
+# check if dpkg (Debian/Ubuntu package manager) is available
 if command -v dpkg &> /dev/null; then
     if dpkg -l "$pkg" &> /dev/null; then
         echo "Status: Installed"
@@ -13,6 +14,7 @@ if command -v dpkg &> /dev/null; then
         echo "Status: Not installed"
         echo "Run: sudo apt install $pkg"
     fi
+# fallback to checking rpm (Red Hat/Fedora) if dpkg isn't around
 elif command -v rpm &> /dev/null; then
     if rpm -q "$pkg" &> /dev/null; then
         echo "Status: Installed"

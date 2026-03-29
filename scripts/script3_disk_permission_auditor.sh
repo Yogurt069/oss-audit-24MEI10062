@@ -8,6 +8,7 @@ echo "-------------------------"
 
 for d in "${dirs[@]}"; do
     if [ -d "$d" ]; then
+        # extract permissions, owner, and group from ls output
         perms=$(ls -ld "$d" | awk '{print $1, $3, $4}')
         size=$(du -sh "$d" 2>/dev/null | awk '{print $1}')
         echo "$d -> Perms/Owner: $perms | Size: $size"
@@ -21,8 +22,10 @@ echo "--- VLC checks ---"
 plugins_dir="/usr/lib/vlc/plugins"
 
 if [ -d "$plugins_dir" ]; then
+    # grab permissions and ownership details for the plugins directory
     p=$(ls -ld "$plugins_dir" | awk '{print $1, $3, $4}')
     s=$(du -sh "$plugins_dir" 2>/dev/null | awk '{print $1}')
+    # count the number of shared object (.so) files in the plugins folder
     c=$(find "$plugins_dir" -name "*.so" 2>/dev/null | wc -l)
     
     echo "$plugins_dir:"

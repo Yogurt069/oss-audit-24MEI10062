@@ -14,6 +14,7 @@ if [ ! -f "$log_file" ]; then
     exit 1
 fi
 
+# wait for the log file to actually have some content, retrying up to 3 times
 retries=0
 while true; do
     if [ -s "$log_file" ]; then
@@ -31,6 +32,7 @@ done
 count=0
 echo "Searching for '$kw' in $log_file..."
 
+# read the file line by line and count how many times our keyword pops up (case-insensitive)
 while IFS= read -r line; do
     if echo "$line" | grep -iq "$kw"; then
         count=$((count + 1))
