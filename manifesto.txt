@@ -1,5 +1,5 @@
-Open Source Manifesto
-Author: Aditya Anil Tiwari
+﻿Open Source Manifesto
+Author: Sujit Kshatriya
 Date: 29 Mar 2026
 ------------------------
 

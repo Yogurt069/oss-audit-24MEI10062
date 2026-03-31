@@ -1,7 +1,7 @@
 # Open Source Audit: VLC Media Player
 
 **Course:** Open Source Software (NGMC)
-**Student:** Aditya Anil Tiwari | **Registration:** 24BSA10166
+**Student:** Sujit Kshatriya | **Registration:** 24MEI10062
 **Slot:** c11 | **Date:** 30/03/2026
 
 ## Why VLC?
@@ -11,7 +11,7 @@ I chose VLC Media Player for this audit because of its awesome history starting 
 
 ## What's in this repo?
 ```text
-oss-audit-24BSA10166/
+oss-audit-24MEI10062/
 │
 ├── README.md                          <-- You're reading this
 │
@@ -23,7 +23,7 @@ oss-audit-24BSA10166/
 │   └── script5_manifesto_generator.sh <-- Generates an open-source manifesto
 │
 └── report/
-    └── OSS_Audit_24BSA10166.pdf       <-- Final project report 
+    └── OSS_Audit_24MEI10062.pdf       <-- Final project report 
 ```
 
 ---
@@ -57,8 +57,8 @@ An interactive script! It asks you 3 quick questions using `read -p`. Based on w
 ### Steps
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/AdityaTiwari64/oss-audit-24BSA10166.git
-   cd oss-audit-24BSA10166/scripts
+   git clone https://github.com/Yogurt069/oss-audit-24MEI10062.git
+   cd oss-audit-24MEI10062/scripts
    ```
 
 2. **Give them execute permissions:**
