@@ -2,7 +2,7 @@
 
 **Course:** Open Source Software (NGMC)
 **Student:** Sujit Kshatriya | **Registration:** 24MEI10062
-**Slot:** c11 | **Date:** 30/03/2026
+**Slot:** f11 | **Date:** 30/03/2026
 
 ## Why VLC?
 I chose VLC Media Player for this audit because of its awesome history starting as a student project at a French university. It also has an interesting dual-license setup (GPL for the app, LGPL for the core engine) and is one of the most downloaded open-source apps ever.
